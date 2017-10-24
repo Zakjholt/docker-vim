@@ -10,7 +10,7 @@ RUN addgroup -g 1000 user \
 
 USER user
 RUN mkdir -p ~/.vim/autoload
-
+RUN yarn global add typescript
 RUN wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim -O ~/.vim/autoload/plug.vim
 RUN wget https://raw.githubusercontent.com/zakjholt/dotfiles/master/.vimrc -O ~/.vimrc
 
